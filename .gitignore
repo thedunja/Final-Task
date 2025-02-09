@@ -1,0 +1,19 @@
+
+.idea/
+
+# Ignore virtual environments
+venv/
+fastapienv/
+.env/
+
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore Docker-related files (if needed)
+*.log
+
+# Local configuration files
+*.env
+*.env.*
+*.local
