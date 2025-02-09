@@ -96,7 +96,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **200 OK**: Returns user details if authentication is successful.
   - **401 Unauthorized**: If authentication fails or user not found.
 #### Example Request:
-```GET /user/
+```
+   GET /user/
 ```
 
 ### 2. Change User Password
@@ -112,7 +113,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **401 Unauthorized**: Authentication failed or incorrect password provided.
   - **400 Bad Request**: The new password doesn't meet security requirements.
 #### Example Request:
-```PUT /user/password
+```
+   PUT /user/password
    Authorization: Bearer <your_token>
    Content-Type: application/json
 ```
@@ -128,7 +130,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **204 No Content**: Phone number updated successfully.
   - **401 Unauthorized**: If authentication fails.
 #### Example Request:
-```PUT /user/phonenumber/1234567890
+```
+   PUT /user/phonenumber/1234567890
    Authorization: Bearer <your_token>
 ```
 
@@ -142,7 +145,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **200 OK**: Returns a list of projects for the authenticated user.
   - **401 Unauthorized**: If authentication fails or user is not found.
 #### Example Request:
-```GET /projects/
+```
+   GET /projects/
    Authorization: Bearer <your_token>
 ```
 
@@ -158,7 +162,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **401 Unauthorized**: If authentication fails or user is not found.
   - **400 Bad Request**: If project name or description is invalid.
 #### Example Request:
-```POST /projects/
+```
+   POST /projects/
    Authorization: Bearer <your_token>
    Content-Type: application/json
 ```
@@ -175,7 +180,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **401 Unauthorized**: If authentication fails.
   - **404 Not Found**: If the project does not exist or does not belong to the authenticated user.
 #### Example Request: 
-```GET /projects/project/1/info
+```
+   GET /projects/project/1/info
    Authorization: Bearer <your_token>
 ```
 ### 8. Delete Project
@@ -190,7 +196,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **401 Unauthorized**: If authentication fails or user is not found.
   - **404 Not Found**: If the project does not exist or does not belong to the authenticated user.
 #### Example Request: 
-```DELETE /projects/project/1
+```
+   DELETE /projects/project/1
    Authorization: Bearer <your_token>
 ```
 
@@ -206,7 +213,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **401 Unauthorized**: If authentication fails.
   - **404 Not Found**: If the project does not exist or does not belong to the authenticated user.
 #### Example Request: 
-```GET /projects/project/1/documents
+```
+   GET /projects/project/1/documents
    Authorization: Bearer <your_token>
 ```
 
@@ -225,7 +233,8 @@ Alternatively, you can access the API documentation in a different format throug
   - **404 Not Found**: If the project does not exist or does not belong to the authenticated user.
   - **400 Bad Request**: If the file is missing or too large.
 #### Example Request: 
-```POST /projects/project/1/documents
+```
+   POST /projects/project/1/documents
    Authorization: Bearer <your_token>
    Content-Type: multipart/form-data
 ```
